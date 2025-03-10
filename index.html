@@ -218,27 +218,27 @@
         </div>
         <div class="modal-body">
           <p>Completa los siguientes datos para crear tu cuenta:</p>
-          <form>
+          <form id="form-crear-cuenta" autocomplete="off">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre y Apellido *</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Perez">
+              <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Perez" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email *</label>
-              <input type="email" class="form-control" id="email" placeholder="Ej: Juanperez@dominio.com">
+              <input type="email" class="form-control" id="email" placeholder="Ej: Juanperez@dominio.com" required>
             </div>
             <div class="mb-3">
               <label for="contraseña" class="form-label">Contraseña *</label>
-              <input type="password" class="form-control" id="contraseña">
+              <input type="password" class="form-control" id="contraseña" minlength="8" required>
             </div>
             <div class="mb-3">
               <label for="repetirContraseña" class="form-label">Repetir Contraseña *</label>
-              <input type="password" class="form-control" id="repetirContraseña">
+              <input type="password" class="form-control" id="repetirContraseña" minlength="8" required>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Enviar</button>
+          <button type="submit" form="form-crear-cuenta" class="btn btn-primary">Enviar</button>
         </div>
       </div>
     </div>
